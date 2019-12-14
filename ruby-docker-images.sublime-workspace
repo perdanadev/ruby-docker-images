@@ -520,11 +520,13 @@
 	"buffers":
 	[
 		{
-			"file": "dev-bionic-2.6.3.dockerfile",
+			"contents": "FROM ubuntu:bionic\n\nRUN apt update && apt install -y gnupg \\\n                                  apt-transport-https \\\n                                  ca-certificates \\\n                                  curl && \\\n    echo \"deb https://apt.fullstaqruby.org ubuntu-18.04 main\" > /etc/apt/sources.list.d/fullstaq-ruby.list && \\\n    curl -SLfO https://raw.githubusercontent.com/fullstaq-labs/fullstaq-ruby-server-edition/master/fullstaq-ruby.asc && \\\n    apt-key add fullstaq-ruby.asc && apt update && apt install -y fullstaq-ruby-2.6.3 && \\\n    echo 'eval \"$(rbenv init -)\"' >> /etc/bash.bashrc && rbenv global 2.6.3 && \\\n    apt clean && apt autoclean\n\nRUN \n",
+			"file": "prod-bionic-2.6.3.dockerfile",
+			"file_size": 650,
+			"file_write_time": 132190565321168565,
 			"settings":
 			{
-				"buffer_size": 746,
-				"encoding": "UTF-8",
+				"buffer_size": 656,
 				"line_ending": "Unix"
 			}
 		}
@@ -541,15 +543,19 @@
 		"selected_items":
 		[
 			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"du",
+				"File Manager: Duplicate"
+			],
+			[
 				"dele",
 				"File Manager: Delete"
 			],
 			[
 				"renm",
-				"Rename File"
-			],
-			[
-				"renam",
 				"Rename File"
 			],
 			[
@@ -562,10 +568,6 @@
 			],
 			[
 				"dupl",
-				"File Manager: Duplicate"
-			],
-			[
-				"du",
 				"File Manager: Duplicate"
 			],
 			[
@@ -1077,6 +1079,8 @@
 	],
 	"file_history":
 	[
+		"/Users/ukz/repos/pet-projects/ruby-docker-images/dev-bionic-2.6.3.dockerfile",
+		"/Users/ukz/repos/pet-projects/ruby-docker-images/prod-bionic-2.6.3.dockerfile",
 		"/Users/ukz/repos/pet-projects/ruby-docker-images/dev_ubuntu-bionic_ruby-2.6.3.dockerfile",
 		"/Users/ukz/repos/pet-projects/ruby-docker-images/README.md",
 		"/Users/ukz/repos/pet-projects/ruby-docker-images/prod_ubuntu-bionic_ruby-2.6.3.dockerfile",
@@ -1202,13 +1206,11 @@
 		"/Users/ukz/repos/work-projects/melalie/api/app/models/motorbike_schedule.rb",
 		"/Users/ukz/repos/work-projects/melalie/api/app/models/motorbike_booking/validations.rb",
 		"/Users/ukz/repos/work-projects/melalie/api/config/routes.rb",
-		"/Users/ukz/repos/work-projects/melalie/api/config/routes/admin_routes.rb",
-		"/Users/ukz/repos/work-projects/melalie/api/frontend/components/dashboard/brands/new/dashboard_brands_new.js",
-		"/Users/ukz/repos/work-projects/melalie/api/app/controllers/home_controller.rb"
+		"/Users/ukz/repos/work-projects/melalie/api/config/routes/admin_routes.rb"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -1222,6 +1224,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2.6.3",
 			"&& \\"
 		],
 		"highlight": true,
@@ -1245,24 +1248,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "dev-bionic-2.6.3.dockerfile",
+					"file": "prod-bionic-2.6.3.dockerfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 746,
+						"buffer_size": 656,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								238,
-								238
+								655,
+								655
 							]
 						],
 						"settings":
 						{
-							"SL.103.region_keys":
+							"SL.296.region_keys":
 							[
 							],
 							"apply_syntax_touched": true,
@@ -2021,7 +2024,7 @@
 		[
 			[
 				"",
-				"~/repos/work-projects/melalie/api/melalie-api.sublime-project"
+				"~/repos/work-projects/izipack/izipack.sublime-project"
 			],
 			[
 				"api",
