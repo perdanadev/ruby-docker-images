@@ -1,4 +1,4 @@
-FROM ukazap/ruby:prod-bionic-2.6.5
+FROM docker.pkg.github.com/perdanadev/ruby-docker-images/prod:2.6.5
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt update && apt install -y build-essential zlib1g-dev nodejs && \
