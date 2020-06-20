@@ -1,6 +1,6 @@
 # README
 
-Fullstaq Ruby docker images used in Perdana.dev
+Fullstaq Ruby Docker images used in Perdana.dev
 
 ## Pull image from the command line
 
